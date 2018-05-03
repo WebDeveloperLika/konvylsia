@@ -1,0 +1,38 @@
+.container {
+	width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&-fluid {
+		width: 100%;
+	}
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.col {
+	&-1 {
+		display: inline-block;
+		width: 33.33333333%;
+	}
+
+	&-2 {
+		display: inline-block;
+		width: 50%;
+	}
+
+	&-3 {
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 768px;
+	}
+}
